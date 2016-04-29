@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diet"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please input food :"
+                android:textSize="17dp"
+                android:textColor="#020202" />
+
+            <Spinner
+                android:layout_marginTop="25dp"
+                android:id="@+id/frag_diet_list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/list1"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:minWidth="30dp"
+                >
+            </Spinner>
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:id="@+id/frag_diet_list2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/list2"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:minWidth="30dp">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/frag_diet_calorie"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calorie: "
+                android:textSize="16dp"
+                android:textColor="#020202"/>
+
+            <LinearLayout
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/frag_diet_addContent"
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/frag_diet_addButton"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="add"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/frag_diet_ndbtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal" />
+
+           <ImageView
+                android:paddingBottom="10dp"
+                android:id="@+id/frag_diet_load"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nutrition"
+                android:layout_gravity="center_horizontal"
+                android:foregroundGravity="center"
+                android:scaleType="fitXY" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frag_diet_ndb_progressBar"
+                android:layout_gravity="center"
+                android:contentDescription="Loading..." />
+
+            <ListView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/frag_diet_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/frag_diet_bingbackground"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bing">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/frag_diet_bingImage_progressBar"
+                    android:layout_gravity="center"
+                    android:contentDescription="Loading..." />
+
+                <ImageView
+                    android:id="@+id/frag_diet_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_horizontal" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frag_diet_bing_progressBar"
+                android:layout_gravity="center"
+                android:contentDescription="Loading..." />
+
+            <ListView
+                android:layout_weight="1.2"
+                android:id="@+id/frag_diet_imgContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/icon_main"
+            android:title="Main Page"
+
+            />
+        <item
+            android:id="@+id/nav_calorie"
+            android:icon="@drawable/icon_calorie"
+            android:title="Calorie Goal" />
+        <item
+
+            android:id="@+id/nav_dailyDiet"
+            android:icon="@drawable/icon_diet"
+            android:title="Daily Diet" />
+        <item
+            android:id="@+id/nav_steps"
+            android:icon="@drawable/icon_steps"
+            android:title="Steps" />
+        <item
+            android:id="@+id/nav_trackCalorie"
+            android:icon="@drawable/icon_track"
+            android:title="Track Calorie" />
+        <item
+        android:id="@+id/nav_report"
+        android:icon="@drawable/icon_report"
+        android:title="Progress Report" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/icon_map"
+            android:title="Map" />
+    </group>
+    <item android:title="System Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Personal Setting" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/icon_exit"
+                android:title="Exit" />
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        </menu>
+    </item>
+
+</menu>

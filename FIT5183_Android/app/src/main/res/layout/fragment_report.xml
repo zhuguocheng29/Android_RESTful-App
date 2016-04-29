@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/frag_report_dailybutton"
+           android:layout_marginRight="2dp"
+           android:padding="5dp"
+           android:textAllCaps="false"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Daily"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center"
+           android:textSize="17dp"
+           android:background="#dfdede"
+           />
+       <TextView
+           android:id="@+id/frag_report_weeklybutton"
+           android:layout_marginLeft="2dp"
+           android:padding="5dp"
+           android:textAllCaps="false"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center"
+           android:text="Weekly"
+           android:textSize="17dp"
+           android:background="#dfdede" />
+   </LinearLayout>
+    <FrameLayout
+
+        android:layout_marginTop="2dp"
+        android:id="@+id/frag_report_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+       />
+
+</LinearLayout>

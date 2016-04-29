@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/frag_report_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" ----      StartDate      ----"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="15dp"
+        android:background="#3555f5"
+        android:textColor="#fffefe" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/frag_report_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" ----      EndDate      ----"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="15dp"
+        android:background="#3555f5"
+        android:textColor="#fffefe" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_marginTop="20dp"
+        android:id="@+id/period_chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        />
+</LinearLayout>
